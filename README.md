@@ -20,7 +20,7 @@ Run `npm run start-pwa` to start PWA
 
 ## Deploy to Github Pages
 
-Run `ng deploy` to start PWA
+Run `ng deploy` to deploy to Github Pages
 
 ## Running unit tests
 
