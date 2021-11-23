@@ -1,0 +1,52 @@
+.apps-list {
+  padding: 16px;
+}
+
+.app-item {
+  border-radius: 8px;
+  transition: 0.3s;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: space-around;
+  justify-content: space-evenly;
+  cursor: pointer;
+  text-decoration: none;
+  color: #000000;
+
+  &:hover {
+    background-color: rgba(66, 133, 244, 0.18);
+  }
+}
+
+.app-logo {
+  min-height: 48px;
+  max-height: 48px;
+  min-width: 48px;
+  max-width: 48px;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  .app-logo__image {
+    height: 36px;
+    width: 36px;
+    object-fit: contain;
+    object-position: center center;
+    &.mat-icon {
+      font-size: 36px;
+    }
+  }
+}

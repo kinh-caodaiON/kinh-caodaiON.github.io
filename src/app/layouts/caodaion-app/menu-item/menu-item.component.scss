@@ -1,0 +1,33 @@
+.mat-list-item {
+  height: 48px !important;
+  .mat-icon {
+
+  }
+}
+
+.mat-expansion-panel {
+  box-shadow: none;
+}
+
+.mat-expansion-panel-header {
+  padding: 0 16px;
+}
+
+.mat-expansion-panel-header-title {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+
+  .mat-list-text {
+    padding-left: 16px;
+  }
+
+}
+
+.sub-mat-list-item {
+  &:hover {
+    background: transparent;
+  }
+}

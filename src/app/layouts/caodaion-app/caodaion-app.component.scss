@@ -1,0 +1,86 @@
+.caodaion-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.caodaion-drawer-container {
+  flex: 1;
+}
+
+.mat-drawer-content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+
+.mat-drawer-container {
+  background: #FFFFFF;
+}
+
+.mat-drawer-side {
+  border-right: none;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.mat-toolbar {
+  background: #FFFFFF;
+  border-bottom: 1px solid #dadce0;
+  box-sizing: border-box;
+}
+
+.mat-button-base {
+  margin: 8px 8px 8px 0;
+}
+
+.app-logo {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  text-decoration: none;
+  color: #000000;
+
+  .app-logo__image {
+    height: 40px;
+    width: 40px;
+
+    img {
+      height: 40px;
+      width: 40px;
+      object-fit: contain;
+      object-position: center center;
+    }
+  }
+
+  .app-logo__name {
+    margin-left: 16px;
+    color: #5f6368;
+  }
+}
+
+.mat-drawer-content-container {
+  display: flex;
+  align-items: stretch;
+  height: 100%;
+  width: 100%;
+}
+
+.mat-drawer {
+  border-right: #dadce0 1px solid;
+}

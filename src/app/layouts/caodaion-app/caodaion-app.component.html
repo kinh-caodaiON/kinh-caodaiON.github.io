@@ -1,0 +1,35 @@
+<div class="caodaion-container">
+  <mat-toolbar>
+    <button mat-icon-button (click)="drawer.toggle()" aria-label="button drawer toggle">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <a class="app-logo" [href]="currentAppPath">
+      <span class="app-logo__image">
+        <img [src]="currentAppLogo" [alt]="currentAppLogoName">
+      </span>
+      <span class="app-logo__name">{{currentAppLogoName}}</span>
+    </a>
+    <div class="spacer"></div>
+    <app-caodaion-apps></app-caodaion-apps>
+  </mat-toolbar>
+  <mat-drawer-container autosize class="caodaion-drawer-container">
+    <mat-drawer #drawer [mode]="drawerMode" [opened]="drawerOpened">
+      <mat-nav-list>
+        <mat-list-item>
+          <mat-icon mat-list-icon></mat-icon>
+          <p matLine><span>Kinh Thiên Đạo</span></p>
+        </mat-list-item>
+        <mat-list-item>
+          <mat-icon mat-list-icon></mat-icon>
+          <p matLine><span>Kinh Thế Đạo</span></p>
+        </mat-list-item>
+      </mat-nav-list>
+    </mat-drawer>
+    <mat-drawer-content>
+      <div class="mat-drawer-content-container">
+        <router-outlet></router-outlet>
+      </div>
+      <app-footer></app-footer>
+    </mat-drawer-content>
+  </mat-drawer-container>
+</div>

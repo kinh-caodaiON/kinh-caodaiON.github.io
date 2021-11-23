@@ -1,0 +1,18 @@
+<mat-list-item *ngIf="menuItem && !menuItem?.expand" routerLink="{{menuItem?.path}}">
+  <mat-icon mat-list-icon>{{menuItem?.icon}}</mat-icon>
+  <p matLine><span>{{menuItem?.display}}</span></p>
+</mat-list-item>
+<mat-expansion-panel *ngIf="menuItem && menuItem?.expand" class="sub-menu-item">
+  <mat-expansion-panel-header class="mat-list-base sub-mat-list-base">
+    <mat-panel-title class="mat-list-item sub-mat-list-item">
+      <mat-icon class="mat-list-icon">{{menuItem?.icon}}</mat-icon>
+      <span class="mat-list-text">{{menuItem?.display}}</span>
+    </mat-panel-title>
+  </mat-expansion-panel-header>
+  <mat-nav-list>
+    <mat-list-item *ngFor="let sub of menuItem?.expand" routerLink="{{sub?.path}}">
+      <mat-icon mat-list-icon>{{sub?.icon}}</mat-icon>
+      <p matLine><span>{{sub?.display}}</span></p>
+    </mat-list-item>
+  </mat-nav-list>
+</mat-expansion-panel>

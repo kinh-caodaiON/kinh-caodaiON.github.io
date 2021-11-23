@@ -1,0 +1,31 @@
+<button mat-icon-button [matTooltip]="'Ứng dụng'">
+  <mat-icon [mat-menu-trigger-for]="apps">apps</mat-icon>
+</button>
+<mat-menu #apps class="apps-list">
+  <mat-grid-list [cols]="3" [rowHeight]="'1:1'" [gutterSize]="'0.5rem'">
+    <mat-grid-tile>
+      <a class="app-item" [href]="caodaionPath" [target]="'_blank'">
+        <div class="app-logo">
+          <img src="assets/brands/logo.circle.full-color.svg" alt="" class="app-logo__image">
+        </div>
+        <div class="app-name">CaoDaiON</div>
+      </a>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <a class="app-item" [href]="calendarPath" [target]="'_blank'">
+        <div class="app-logo">
+          <img src="assets/brands/logo.calendar.app.svg" alt="" class="app-logo__image">
+        </div>
+        <div class="app-name">Lịch</div>
+      </a>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <a class="app-item" [href]="kinhPath" [target]="'_blank'">
+        <div class="app-logo">
+          <img src="assets/brands/logo.kinh.app.svg" alt="" class="app-logo__image">
+        </div>
+        <div class="app-name">Kinh</div>
+      </a>
+    </mat-grid-tile>
+  </mat-grid-list>
+</mat-menu>

@@ -1,0 +1,26 @@
+.kinh-item {
+  display: block;
+  height: 100%;
+  width: 100%;
+  border-radius: 8px;
+  user-select: none;
+  cursor: pointer;
+
+  .mat-card {
+    display: flex;
+  }
+}
+
+.kinh__current-kinh {
+  font-size: 30px;
+}
+
+.kinh-list {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 50%;
+
+  li {
+    width: 50%;
+  }
+}

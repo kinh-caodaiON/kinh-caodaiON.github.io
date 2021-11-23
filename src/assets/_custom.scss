@@ -1,0 +1,41 @@
+.sub-menu-item {
+  .mat-expansion-panel-body {
+    padding: 0;
+  }
+}
+
+.apps-list {
+  width: 320px;
+  padding: 16px;
+  max-height: 410px !important;
+  overflow-y: auto !important;
+
+  /* width */
+  &::-webkit-scrollbar {
+    width: 18px;
+    height: 18px;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background: #FFFFFF;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: #DADCE0;
+    border-radius: 18px;
+    border: 5px solid #FFFFFF;
+  }
+}
+
+.app-tag {
+  height: 100%;
+  width: 100%;
+}
+
+.container-fluid {
+  padding: 0 1.25rem;
+  max-width: 100%;
+  box-sizing: border-box;
+}
